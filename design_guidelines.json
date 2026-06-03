@@ -1,0 +1,115 @@
+{
+  "theme": "light",
+  "archetype": "4_Swiss_High_Contrast",
+  "brand_identity": "Professional Government Infrastructure Presentation. Restrained, authoritative, premium ($100M-scale proposal).",
+  "typography": {
+    "heading_font": "Cabinet Grotesk",
+    "body_font": "IBM Plex Sans",
+    "weights": {
+      "heading": "font-bold tracking-tight",
+      "subheading": "font-medium tracking-[0.1em] uppercase",
+      "body": "font-normal"
+    },
+    "hierarchy": {
+      "h1": "text-5xl md:text-6xl lg:text-7xl leading-tight",
+      "h2": "text-3xl md:text-4xl lg:text-5xl tracking-tight",
+      "h3": "text-xl md:text-2xl font-medium",
+      "h4": "text-lg font-medium",
+      "body": "text-base md:text-lg text-[#2D2D2D]/80 leading-relaxed"
+    },
+    "imports": [
+      "@fontsource/cabinet-grotesk",
+      "@fontsource/ibm-plex-sans"
+    ]
+  },
+  "colors": {
+    "primary": "#0B3B24",
+    "secondary": "#D4AF37",
+    "neutral": {
+      "black": "#0A0A0A",
+      "charcoal": "#2D2D2D",
+      "white": "#FFFFFF",
+      "off_white": "#F7F9F8",
+      "border": "#E5E5E5"
+    },
+    "chart_palette": [
+      "#0B3B24",
+      "#D4AF37",
+      "#2D2D2D",
+      "#4A6B58",
+      "#E2C874"
+    ]
+  },
+  "layout": {
+    "container": "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8",
+    "spacing": {
+      "section_y": "py-24 md:py-32",
+      "element_gap": "gap-8 md:gap-12"
+    },
+    "surface": {
+      "card": "bg-white border border-[#2D2D2D]/10 rounded-none shadow-none",
+      "card_hover": "hover:border-[#0B3B24]/40 transition-colors duration-300",
+      "glass": "backdrop-blur-xl bg-white/90 border-b border-[#2D2D2D]/10",
+      "dark_section": "bg-[#0B3B24] text-white"
+    }
+  },
+  "components": {
+    "buttons": {
+      "primary": "bg-[#0B3B24] text-white hover:bg-[#0B3B24]/90 px-8 py-4 rounded-none font-medium tracking-wide transition-all",
+      "secondary": "bg-transparent border-2 border-[#0B3B24] text-[#0B3B24] hover:bg-[#0B3B24]/5 px-8 py-4 rounded-none font-medium transition-all",
+      "accent": "bg-[#D4AF37] text-[#0A0A0A] hover:bg-[#D4AF37]/90 px-8 py-4 rounded-none font-semibold transition-all"
+    },
+    "navigation": "Sticky top header (z-50) using glassmorphism (bg-white/90 backdrop-blur-xl). Must include smooth-scroll anchor links to the 16 sections.",
+    "charts": {
+      "library": "recharts",
+      "style": "Authoritative Bloomberg-terminal-meets-government-whitepaper. Sharp lines, solid geometric fills, no curves (monotone or linear interpolation).",
+      "guidance": "Use strokeWidth={2}, clean CartesianGrid (strokeDasharray='3 3', vertical={false}). Tooltips must have sharp square corners and charcoal borders."
+    },
+    "maps": {
+      "type": "SVG Stylized Maps",
+      "style": "Minimalist geometric vector strokes. Deep green paths, gold nodes for hubs. NO Mapbox or Google Maps APIs."
+    },
+    "forms": "Use Shadcn customized for sharp corners (rounded-none). Inputs should have solid charcoal/20 borders, focus:ring-[#0B3B24]."
+  },
+  "sections_guidance": {
+    "hero": "Cinematic full viewport height. Use masterplan_bg or hero_landscape with a bg-black/40 overlay. Huge Cabinet Grotesk typography.",
+    "challenges": "Grid of stat counters showing demographic/regional stats.",
+    "masterplan": "Bento-box grid revealing 6 precincts (Community, Accommodation, Transport, Commercial, Event, Emergency). Hover states reveal data.",
+    "flow_diagram": "Horizontal step-cards or connected SVG flow connecting Council ↔ Cassowary ↔ Community.",
+    "revenue_model": "Interactive dashboard with 3 toggle buttons (Conservative, Moderate, Optimistic) that mutate state and update the Recharts below.",
+    "roadmap": "Vertical or horizontal timeline using strict geometric nodes, mapping 6 implementation phases.",
+    "cta": "Final dark section (bg-primary) with form integrations mapped to MongoDB."
+  },
+  "image_urls": {
+    "hero_landscape": {
+      "url": "https://images.pexels.com/photos/32915384/pexels-photo-32915384.jpeg",
+      "description": "Australian outback expansive view"
+    },
+    "masterplan_bg": {
+      "url": "https://images.pexels.com/photos/28104341/pexels-photo-28104341.jpeg",
+      "description": "Aerial view for masterplan mapping"
+    },
+    "logistics_freight": {
+      "url": "https://images.pexels.com/photos/12261472/pexels-photo-12261472.jpeg",
+      "description": "White semi-truck on highway for transport precinct"
+    },
+    "community_park": {
+      "url": "https://images.pexels.com/photos/17240674/pexels-photo-17240674.jpeg",
+      "description": "Aerial park view for community section"
+    },
+    "infrastructure_render": {
+      "url": "https://images.pexels.com/photos/5640602/pexels-photo-5640602.jpeg",
+      "description": "Modern structural building for commercial precinct"
+    },
+    "veterans_program": {
+      "url": "https://images.unsplash.com/photo-1543132220-3ec99c6094dc?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxODh8MHwxfHNlYXJjaHwyfHx2ZXRlcmFuJTIwcG9ydHJhaXQlMjBwcm9mZXNzaW9uYWx8ZW58MHx8fHwxNzgwNDY0ODc5fDA&ixlib=rb-4.1.0&q=85",
+      "description": "Professional portrait for veteran employment"
+    },
+    "emergency_response": {
+      "url": "https://images.pexels.com/photos/6519865/pexels-photo-6519865.jpeg",
+      "description": "EMT professionals for emergency response capability"
+    }
+  },
+  "testing_attributes": "All interactive elements (tabs, toggles, buttons, chart filters, forms) MUST include a 'data-testid' attribute.",
+  "instructions_to_main_agent": "1. Do NOT use placeholder images; rely exclusively on the image_urls provided. 2. Build all 16 sections natively on one long-scroll page using Tailwind. 3. Strip all border-radius (rounded-none) and soft drop-shadows from Shadcn components to maintain the rigid, premium architectural government aesthetic. 4. Use Lucide-react for iconography. 5. Ensure responsive spacing is extremely generous (p-12 to p-24) on desktop to feel expensive."
+}
